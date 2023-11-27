@@ -1,0 +1,273 @@
+{
+  "config": "{\"version\":\"5.49\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU11\",\"version\":\"5.49\",\"type\":2}},\"activeSectionIndex\":2,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU11",
+            "path": "BaseThemes/CY23SU11.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F0E1E1'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"35D\"}}}}}]}}",
+      "displayName": "Exports",
+      "displayOption": 3,
+      "filters": "[{\"name\":\"Filter804286caf54a421143df\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sheet1\"}},\"Property\":\"Type\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Type\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Export'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{},\"isHiddenInViewMode\":true}]",
+      "height": 1100.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"066673b133b1a30c9c14\",\"layouts\":[{\"id\":0,\"position\":{\"x\":26,\"y\":652,\"z\":8000,\"width\":254,\"height\":52,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Select Year\",\"textStyle\":{\"fontSize\":\"20pt\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 52.00,
+          "width": 254.00,
+          "x": 26.00,
+          "y": 652.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"0e240d0ff2d4bbd4fa5c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":26,\"y\":192,\"z\":0,\"width\":1228,\"height\":440,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Series\":[{\"queryRef\":\"Sheet1.country\"}],\"Y\":[{\"queryRef\":\"Sum(Sheet1.value)\"}],\"Category\":[{\"queryRef\":\"Sheet1.year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"country\"},\"Name\":\"Sheet1.country\",\"NativeReferenceName\":\"country\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"value\"}},\"Function\":0},\"Name\":\"Sum(Sheet1.value)\",\"NativeReferenceName\":\"Sum of value\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"year\"},\"Name\":\"Sheet1.year\",\"NativeReferenceName\":\"year\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"country\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"legendMarkerRendering\":{\"expr\":{\"Literal\":{\"Value\":\"'markerCircleDefault'\"}}},\"labelColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}],\"valueAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 440.00,
+          "width": 1228.00,
+          "x": 26.00,
+          "y": 192.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"29597f19c66d6d29f0b8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":26,\"y\":704,\"z\":2000,\"width\":582,\"height\":324,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Sheet1.year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"year\"},\"Name\":\"Sheet1.year\",\"NativeReferenceName\":\"year\"}]},\"syncGroup\":{\"groupName\":\"year\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"items\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 324.00,
+          "width": 582.00,
+          "x": 26.00,
+          "y": 704.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"5dc04cc94d4ef555f0d0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":470.34120734908134,\"y\":11.758530183727034,\"z\":4000,\"width\":273.8057742782152,\"height\":75.59055118110236,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Export Data\",\"textStyle\":{\"fontSize\":\"32pt\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 75.59,
+          "width": 273.81,
+          "x": 470.34,
+          "y": 11.76,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"7736913de8273b9ba20c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":3000,\"width\":1280,\"height\":100.78740157480314,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}},\"roundEdge\":{\"expr\":{\"Literal\":{\"Value\":\"41L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 100.79,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"8467e3201cf6b1953fc0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":26,\"y\":140,\"z\":7000,\"width\":464,\"height\":52,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Trade of India with the world by year\",\"textStyle\":{\"fontSize\":\"20pt\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 52.00,
+          "width": 464.00,
+          "x": 26.00,
+          "y": 140.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"8c99fdb8bf8b977d29b5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":624,\"y\":782,\"z\":1000,\"width\":630,\"height\":246,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sheet1.TotalExportValue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TotalExportValue\"},\"Name\":\"Sheet1.TotalExportValue\",\"NativeReferenceName\":\"Exports in Dollars\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TotalExportValue\"}}}]},\"columnProperties\":{\"Sheet1.TotalExportValue\":{\"displayName\":\"Exports in Dollars\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000000D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 246.00,
+          "width": 630.00,
+          "x": 624.00,
+          "y": 782.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"a3e3b40215ad39c2c2d9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":624,\"y\":652.7135238647461,\"z\":6000,\"width\":136,\"height\":52,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Country\",\"textStyle\":{\"fontSize\":\"20pt\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 52.00,
+          "width": 136.00,
+          "x": 624.00,
+          "y": 652.71,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"c35ab76cb4a79ca835f8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":624,\"y\":704.7135238647461,\"z\":5000,\"width\":630,\"height\":60,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Sheet1.country\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"country\"},\"Name\":\"Sheet1.country\",\"NativeReferenceName\":\"country\"}]},\"syncGroup\":{\"groupName\":\"country\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"outlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"items\":[{\"properties\":{\"outlineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 60.00,
+          "width": 630.00,
+          "x": 624.00,
+          "y": 704.71,
+          "z": 5000.00
+        }
+      ],
+      "width": 1281.00
+    },
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F0E1E1'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"40D\"}}}}}]}}",
+      "displayName": "trade Deficit",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 1500.00,
+      "name": "ReportSection4330f5f835bacb97e6c7",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"15fb8ff3ec3dcd70a4b1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":614,\"y\":206,\"z\":0,\"width\":466,\"height\":234,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sheet1.Trade Deficit\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Trade Deficit\"},\"Name\":\"Sheet1.Trade Deficit\",\"NativeReferenceName\":\"Trade Deficit\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Trade Deficit\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 234.00,
+          "width": 466.00,
+          "x": 614.00,
+          "y": 206.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"256de39158f35008747b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":15,\"y\":130,\"z\":3000,\"width\":586.6666666666667,\"height\":310,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Sheet1.year\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sheet1.Trade Deficit\"},{\"queryRef\":\"Sum(Sheet1.value)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"year\"},\"Name\":\"Sheet1.year\",\"NativeReferenceName\":\"year\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"value\"}},\"Function\":0},\"Name\":\"Sum(Sheet1.value)\",\"NativeReferenceName\":\"Sum of value\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Trade Deficit\"},\"Name\":\"Sheet1.Trade Deficit\",\"NativeReferenceName\":\"Trade Deficit\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Trade Deficit\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 310.00,
+          "width": 586.67,
+          "x": 15.00,
+          "y": 130.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"3edd3712be0b6b433a68\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":4000,\"width\":1100,\"height\":100,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}},\"roundEdge\":{\"expr\":{\"Literal\":{\"Value\":\"41L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 100.00,
+          "width": 1100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"7d72865f8a40779761ce\",\"layouts\":[{\"id\":0,\"position\":{\"x\":386,\"y\":12,\"z\":5000,\"width\":274,\"height\":76,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Trade Deficit\",\"textStyle\":{\"fontSize\":\"28pt\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 76.00,
+          "width": 274.00,
+          "x": 386.00,
+          "y": 12.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"b63dc296bc9134531797\",\"layouts\":[{\"id\":0,\"position\":{\"x\":72,\"y\":454,\"z\":2000,\"width\":954,\"height\":796,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Sheet1.country\"},{\"queryRef\":\"Sum(Sheet1.year)\"},{\"queryRef\":\"Sheet1.TotalExportValue\"},{\"queryRef\":\"Sheet1.TotalImportValue\"},{\"queryRef\":\"Sum(Sheet1.value)\"},{\"queryRef\":\"Sheet1.Trade Deficit\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"country\"},\"Name\":\"Sheet1.country\",\"NativeReferenceName\":\"Country\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"year\"},\"Name\":\"Sum(Sheet1.year)\",\"NativeReferenceName\":\"Year\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TotalExportValue\"},\"Name\":\"Sheet1.TotalExportValue\",\"NativeReferenceName\":\"TotalExportValue\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TotalImportValue\"},\"Name\":\"Sheet1.TotalImportValue\",\"NativeReferenceName\":\"TotalImportValue\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"value\"}},\"Function\":0},\"Name\":\"Sum(Sheet1.value)\",\"NativeReferenceName\":\"Total Value\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Trade Deficit\"},\"Name\":\"Sheet1.Trade Deficit\",\"NativeReferenceName\":\"Trade Deficit\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"country\"}}}]},\"columnProperties\":{\"Sheet1.country\":{\"displayName\":\"Country\"},\"Sum(Sheet1.year)\":{\"displayName\":\"Year\"},\"Sum(Sheet1.value)\":{\"displayName\":\"Total Value\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"150.01393702106043D\"}}}},\"selector\":{\"metadata\":\"Sheet1.Trade Deficit\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"151D\"}}}},\"selector\":{\"metadata\":\"Sum(Sheet1.value)\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"199D\"}}}},\"selector\":{\"metadata\":\"Sheet1.TotalImportValue\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"199D\"}}}},\"selector\":{\"metadata\":\"Sheet1.TotalExportValue\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"75D\"}}}},\"selector\":{\"metadata\":\"Sum(Sheet1.year)\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"149D\"}}}},\"selector\":{\"metadata\":\"Sheet1.country\"}}],\"grid\":[{\"properties\":{\"gridHorizontal\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"columnHeaders\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}}}}],\"values\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 796.00,
+          "width": 954.00,
+          "x": 72.00,
+          "y": 454.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"c507e50ab16010d91c6a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":613.3333333333334,\"y\":130,\"z\":1000,\"width\":466.6666666666667,\"height\":50,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Sheet1.country\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"country\"},\"Name\":\"Sheet1.country\",\"NativeReferenceName\":\"Country\"}]},\"columnProperties\":{\"Sheet1.country\":{\"displayName\":\"Country\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"items\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 50.00,
+          "width": 466.67,
+          "x": 613.33,
+          "y": 130.00,
+          "z": 1000.00
+        }
+      ],
+      "width": 1100.00
+    },
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F0E1E1'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"35D\"}}}}}]}}",
+      "displayName": "Imports",
+      "displayOption": 3,
+      "filters": "[{\"name\":\"Filter9eea234634069f1fcb50\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sheet1\"}},\"Property\":\"Type\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Type\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Import'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+      "height": 1100.00,
+      "name": "ReportSectionf2edb2cec04f565688f6",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"3c077b33307571a8cb31\",\"layouts\":[{\"id\":0,\"position\":{\"x\":26,\"y\":614,\"z\":4000,\"width\":582,\"height\":324,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Sheet1.year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"year\"},\"Name\":\"Sheet1.year\",\"NativeReferenceName\":\"year\"}]},\"syncGroup\":{\"groupName\":\"year\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"items\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 324.00,
+          "width": 582.00,
+          "x": 26.00,
+          "y": 614.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"6fe366cf7f125851e22c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":1000,\"width\":1280,\"height\":100.78740157480314,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}},\"roundEdge\":{\"expr\":{\"Literal\":{\"Value\":\"41L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 100.79,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"7ed8e655e07c8fa10d3e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":624,\"y\":614,\"z\":5000,\"width\":614,\"height\":60,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Sheet1.country\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"country\"},\"Name\":\"Sheet1.country\",\"NativeReferenceName\":\"country\"}]},\"syncGroup\":{\"groupName\":\"country\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"outlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"items\":[{\"properties\":{\"outlineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 60.00,
+          "width": 614.00,
+          "x": 624.00,
+          "y": 614.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"8279e09a5b7a904ecdd7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":470.34120734908134,\"y\":11.758530183727034,\"z\":2000,\"width\":273.8057742782152,\"height\":75.59055118110236,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Import Data\",\"textStyle\":{\"fontSize\":\"32pt\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 75.59,
+          "width": 273.81,
+          "x": 470.34,
+          "y": 11.76,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"8ae94e0dbb4952fbd4c2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":624,\"y\":562.7135238647461,\"z\":6000,\"width\":136,\"height\":52,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Country\",\"textStyle\":{\"fontSize\":\"20pt\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 52.00,
+          "width": 136.00,
+          "x": 624.00,
+          "y": 562.71,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"9a88dbf87eaaad9b074a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":26,\"y\":562,\"z\":7000,\"width\":254,\"height\":52,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Select Year\",\"textStyle\":{\"fontSize\":\"20pt\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 52.00,
+          "width": 254.00,
+          "x": 26.00,
+          "y": 562.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"c2214ee209f21401a987\",\"layouts\":[{\"id\":0,\"position\":{\"x\":24,\"y\":220,\"z\":0,\"width\":1236,\"height\":318,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Series\":[{\"queryRef\":\"Sheet1.country\"}],\"Y\":[{\"queryRef\":\"Sum(Sheet1.value)\"}],\"Category\":[{\"queryRef\":\"Sheet1.year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"country\"},\"Name\":\"Sheet1.country\",\"NativeReferenceName\":\"country\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"value\"}},\"Function\":0},\"Name\":\"Sum(Sheet1.value)\",\"NativeReferenceName\":\"Sum of value\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"year\"},\"Name\":\"Sheet1.year\",\"NativeReferenceName\":\"year\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"country\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"legend\":[{\"properties\":{\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}],\"valueAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"categoryAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 318.00,
+          "width": 1236.00,
+          "x": 24.00,
+          "y": 220.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"c92941ff0e802debcc2e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":624,\"y\":692,\"z\":3000,\"width\":614,\"height\":246,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sheet1.TotalImportValue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TotalImportValue\"},\"Name\":\"Sheet1.TotalImportValue\",\"NativeReferenceName\":\"TotalImportValue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TotalImportValue\"}}}]},\"columnProperties\":{\"Sheet1.TotalExportValue\":{\"displayName\":\"Exports in Dollars\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000000D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 246.00,
+          "width": 614.00,
+          "x": 624.00,
+          "y": 692.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"f0498596fcf83c5da622\",\"layouts\":[{\"id\":0,\"position\":{\"x\":24,\"y\":154,\"z\":7001,\"width\":446,\"height\":66,\"tabOrder\":7001}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Trade of India with the world by year\",\"textStyle\":{\"fontSize\":\"26.6667px\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 66.00,
+          "width": 446.00,
+          "x": 24.00,
+          "y": 154.00,
+          "z": 7001.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
