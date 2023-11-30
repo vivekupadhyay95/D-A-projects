@@ -26,8 +26,73 @@
         "linguisticMetadata": {
           "content": {
             "DynamicImprovement": "HighConfidence",
+            "Entities": {
+              "sheet1.country": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Sheet1",
+                    "ConceptualProperty": "country"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Country": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "sheet1.totalexportvalue": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Sheet1",
+                    "ConceptualProperty": "TotalExportValue"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Exports in Dollars": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "sheet1.year": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Sheet1",
+                    "ConceptualProperty": "year"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Year": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              }
+            },
             "Language": "en-US",
-            "Version": "1.0.0"
+            "Version": "2.0.0"
           },
           "contentType": "json"
         }
